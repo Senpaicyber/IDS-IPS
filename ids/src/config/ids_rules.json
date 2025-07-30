@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name": "Port Scan Detection",
+        "type": "port_scan",
+        "threshold": 2,
+        "timeframe": 30,
+        "severity": "high",
+        "enabled": true
+    },
+    {
+        "id": 2,
+        "name": "SSH Brute Force",
+        "type": "brute_force",
+        "ports": [
+            22
+        ],
+        "threshold": 2,
+        "timeframe": 60,
+        "severity": "high",
+        "enabled": true
+    },
+    {
+        "id": 3,
+        "name": "HTTP Flood",
+        "type": "http_flood",
+        "ports": [
+            80,
+            443,5000
+        ],
+        "threshold": 10,
+        "timeframe": 10,
+        "severity": "high",
+        "enabled": true
+    },
+    {
+        "id": 4,
+        "name": "ICMP Flood",
+        "type": "icmp_flood",
+        "threshold": 5,
+        "timeframe": 30,
+        "severity": "high",
+        "enabled": true
+    }
+]
